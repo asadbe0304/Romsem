@@ -1,0 +1,141 @@
+.sidebar {
+    // position:fixed;
+    // right: 0;
+    @include reset-list;
+    width: 320px;
+    padding: 50px 0px 55px 0px;
+    min-height: 100vh;
+    @include flex(flex, column, center, space-between);
+    background: #fff;
+}
+
+.card {
+    margin: 0 0 20px 0;
+    padding: 0;
+    width: 290px;
+    @include flex(flex, column, center, center);
+    background: #F2F2F2;
+    border-radius: 5px;
+    transition: box-shadow .3s ease;
+}
+.card:hover{
+    box-shadow: 2px 4px 10px 1px;
+}
+.card:active{
+    box-shadow: 1px 3px 8px 1px;
+}
+.card__title {
+    margin: 12px 0 0 0;
+    padding: 0;
+    @include font(500, 24px, 30px, #000);
+}
+
+.card__text {
+    margin: 10px 0 26px 0;
+    padding: 0;
+    @include font(400, 18px, 22px, #a4acad);
+}
+
+.card__link {
+    @include font(400, 14px, 18px, #f2f2ff);
+    padding: 11px 30px;
+    width: 290px;
+    text-decoration: none;
+    background: #FF9846;
+    border-radius: 0px 0px 5px 5px;
+}
+.card__link:hover{
+    color: #000;
+    opacity: 0.8;
+}
+.frame {
+    position: relative;
+    margin: 0px 0 0 0;
+    padding: 0;
+    width: 290px;
+    @include flex(flex, column, center, center);
+    background: #F2F2F2;
+    border-radius: 5px;
+}
+
+.gps__img {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 80px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    padding: 11px 15px;
+    background: #FF9846;
+    border-radius: 50%;
+    transition: transform 1s ease;
+    animation: gps 1s infinite;
+}
+
+.frame__title {
+    margin: 38px 0 10px 0;
+    padding: 0;
+    @include font(500, 24px, 30px, #000);
+}
+
+.frame__link {
+    margin: 0 0 8px 0;
+    padding: 0;
+    text-align: center;
+    width: 290px;
+    text-decoration: none;
+    @include font(400, 18px, 22px, #a4acad);
+}
+
+@keyframes gps {
+    0% {
+        border: 1px solid #ff9846;
+        transform: scale(1);
+    }
+
+    10% {
+        border: 1px solid #ff9846;
+        transform: scale(1.05);
+    }
+
+    20% {
+        border: 1px solid #ff9846;
+        transform: scale(1.1);
+    }
+
+    30% {
+        border: 1px solid #ff9846;
+        transform: scale(1.15);
+    }
+
+    40% {
+        border: 1px solid #ff9846;
+        transform: scale(1.2);
+    }
+    50% {
+        border: 1px solid #ff9846;
+        transform: scale(1.25);
+    }
+    60% {
+        border: 1px solid #ff9846;
+        transform: scale(1.3);
+    }
+    70% {
+        border: 1px solid #ff9846;
+        transform: scale(1.35);
+    }
+    80% {
+        border: 1px solid #ff9846;
+        transform: scale(1.4);
+    }
+    90% {
+        border: 1px solid #ff9846;
+        transform: scale(1.45);
+    }
+
+    100% {
+        border: 1px solid #ff9846;
+        transform: scale(1.5);
+    }
+}

@@ -1,0 +1,9 @@
+.site-intro{
+    @include reset-list;
+}
+.main{
+    @include reset-list;
+    @include flex(flex,row,flex-start,space-between);
+    max-width: 1753px;
+    background: #f2f2f2;
+}

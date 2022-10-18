@@ -1,0 +1,145 @@
+.site-aside {
+    // position: fixed;
+    // // top: 0;
+    // left: 0;
+    // z-index: 45;
+    margin: 0;
+    padding: 0;
+    width: 213px;
+    min-height: 100vh;
+    background: #fff;
+}
+
+.aside {
+    margin: 0;
+    padding: 32px 0 24px 0;
+    background: #fff;
+    width: 213px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.swipe{
+    width: 0;
+    // display: none;/
+}
+.aside__top {
+    margin: 0 auto;
+    padding: 0 0 24px 0;
+    width: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #a4acad;
+}
+
+.nav__list {
+    margin: 0;
+    padding: 38px 0px 0 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 31px;
+    list-style: none;
+}
+.badge{
+    position: relative;
+}
+.badge::after{
+    position: absolute;
+    content: "скоро";
+    top: -8px;
+    left: 60px;
+    z-index: 34;
+    padding: 3px 0 0px 0;
+    width: 50px;
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    background: #EB5757;
+    border-radius: 10px;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.list__item--link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // gap: 20px;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    padding: 0;
+}
+.nav__list--item{
+    position: relative;
+}
+.nav__list--item::after {
+    position: absolute;
+    z-index: 2;
+    content: " ";
+    width: 30px;
+    height: 30px;
+    top: 0;
+    left: -40px;
+    background-image: url(../../images/pizzaoptim.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+// .nav__list--item:first-child::after{
+//     animation: loader 1s infinite;
+// }
+.nav__list--item:nth-child(2)::after{
+    background-image: url(../../images/set.svg);
+}
+.nav__list--item:nth-child(3)::after{
+    background-image: url(../../images/bok.svg);
+}
+.nav__list--item:nth-child(4)::after{
+    background-image: url(../../images/roll.svg);
+}
+.nav__list--item:nth-child(5)::after{
+    background-image: url(../../images/cushi.svg);
+}
+.nav__list--item:nth-child(6)::after{
+    background-image: url(../../images/salad.svg);
+}
+.nav__list--item:nth-child(7)::after{
+    background-image: url(../../images/sup.svg);
+}
+.nav__list--item:nth-child(8)::after{
+    background-image: url(../../images/corn.svg);
+}
+.nav__list--item:nth-child(9)::after{
+    background-image: url(../../images/naptioptim.svg);
+}
+.nav__list--item:nth-child(10)::after{
+    background-image: url(../../images/aksiya.svg);
+    animation: loader .8s infinite;
+}
+
+.list__item--link:hover {
+    color: #ff9846;
+}
+
+@keyframes loader{
+    // 0%{
+    // transform: rotate(-360deg);
+    // }
+    100%{
+    transform: rotate(360deg);
+    }
+}

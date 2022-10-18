@@ -1,0 +1,18 @@
+@mixin font($fw, $fz, $lh, $color) {
+    font-weight: $fw;
+    font-size: $fz;
+    line-height: $lh;
+    color: $color;
+}
+
+@mixin reset-list {
+    margin: 0;
+    padding: 0;
+}
+
+@mixin flex($df, $flexd, $align, $justify) {
+    display: $df;
+    flex-direction: $flexd;
+    align-items: $align;
+    justify-content: $justify;
+}

@@ -1,0 +1,18 @@
+.hero{
+    padding: 124px 0 0 0;
+}
+.slide{
+    position: relative;
+}
+.indicator{
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.dot{
+    width: 10px!important;
+    height: 10px!important;
+    border-radius: 50%;
+}
